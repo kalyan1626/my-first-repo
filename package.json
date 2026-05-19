@@ -1,0 +1,12 @@
+{
+  "name": "sca-scan-project",
+  "version": "1.0.0",
+  "description": "Snyk SCA Scan Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests configured\""
+  },
+  "author": "kalyan",
+  "license": "MIT",
+  "dependencies": {}
+}
