@@ -1,6 +1,11 @@
 name: SCA Scan for PR
 
 on:
+  push:
+    branches:
+      - main
+      - develop
+
   pull_request:
     branches:
       - main
