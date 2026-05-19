@@ -1,11 +1,6 @@
 name: SCA Scan for PR
 
 on:
-  push:
-    branches:
-      - main
-      - develop
-
   pull_request:
     branches:
       - main
@@ -20,14 +15,6 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18'
-
-      - name: Install Dependencies
-        run: npm install
 
       - name: Install Snyk CLI
         run: npm install -g snyk
